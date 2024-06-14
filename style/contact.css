@@ -1,0 +1,103 @@
+.contact__question {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f5ff;
+  gap: 30px;
+  padding: 50px 50px 0;
+}
+
+.contact__question h2 {
+  color: #95c535;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 32px;
+}
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.form-control {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 15px;
+  border-left: #7b68ee solid 5px;
+  padding: 10px;
+}
+
+.question-button {
+  max-width: 100px;
+  align-self: center;
+}
+
+.contact-address {
+  background-color: #f6f5ff;
+  color: #4b5f6d;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+  text-align: center;
+}
+
+.contact-address h2 {
+  color: #95c535;
+  text-transform: uppercase;
+}
+
+.address-cards ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.address-cards li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  width: 100%;
+  border-left: 10px solid #95c535;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, .3) 3px 3px 8px;
+}
+
+.address-cards span {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.address-cards a:hover {
+  color: #7b68ee;
+}
+
+@media all and (min-width: 481px) and (max-width: 899px){
+  .address-cards ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .contact__question {
+    padding: 50px 20px 0;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .address-cards ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .contact__question {
+    padding: 50px 10px 0;
+  }
+}

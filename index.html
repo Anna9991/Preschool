@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FunLearn</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./image/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./image/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./image/favicon_package_v0.16/safari-pinned-tab.svg" color="#95c535">
+    <meta name="msapplication-TileColor" content="#95c535">
+    <meta name="theme-color" content="#95c535">
+
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/style_com.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="./image/logo.svg" alt="FunLearn logo" />
+      </a>
+      </nav>
+      <input type="checkbox" name="menu" id="menu">
+      <label for="menu"><i class="font-accent icon-bar"></i></label>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__list-choose">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About us</a>
+          </li>
+          <li>
+            <a href="./classes.html">Classes</a>
+          </li>
+          <li>
+            <a href="./faq.html">FAQ</a>
+          </li>
+          <li>
+            <a href="./contacts.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__login">
+        <i class="font-accent user-circle-white" aria-hidden="true"></i>
+        <button class="btn-reset">Log in</button>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="overlay"></div>
+        <div class="intro__about">
+          <h2>Welcome To FunLearn Preschool!</h2>
+          <h1>Make A Brighter Future For Your Child</h1>
+          <p>
+            Preschool education is provided for children in the year preceding
+            their compulsory education. The preschool day is 4 hours during the
+            regular school year.
+          </p>
+          <div class="intro__buttons">
+            <div class="btn btn-white">
+              <a href="./about.html">About us</a>
+            </div>
+            <div class="btn btn-violet">
+              <a href="./classes.html">Classes</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reasons">
+        <img src="./image/Kid_coloring.jpg" alt="Girl's drawing"/>
+        <div class="reasons__text">
+          <h2>Why choose us?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <ul class="reasons__list">
+            <li>
+              <i class="font-accent fa-check" aria-hidden="true"></i>
+              Daily Creativity
+            </li>
+            <li>
+              <i class="font-accent fa-check" aria-hidden="true"></i>
+              Qualified Teachers
+            </li>
+            <li>
+              <i class="font-accent fa-check" aria-hidden="true"></i>
+              Caring Community
+            </li>
+            <li>
+              <i class="font-accent fa-check" aria-hidden="true"></i>
+              Trusted Education
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="result">
+        <ul id="counter-box">
+          <li>
+            <img src="./image/counter-icon-1.svg" alt="Years" />
+            <p>
+              <span class="counter" data-number="30"></span>+<br />Years of
+              Excellence
+            </p>
+          </li>
+          <li>
+            <img src="./image/counter-icon-2.svg" alt="Teachers" />
+            <p>
+              <span class="counter" data-number="1000"></span>+<br />Qualified
+              Teachers
+            </p>
+          </li>
+          <li>
+            <img src="./image/counter-icon-3.svg" alt="Students" />
+            <p>
+              <span class="counter" data-number="5000"></span>+<br />Students
+              Enrolled
+            </p>
+          </li>
+          <li>
+            <img src="./image/counter-icon-4.svg" alt="Award" />
+            <p>
+              <span class="counter" data-number="100"></span>+<br />Total Award
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="testimonials">
+        <div class="container">
+          <h2>Parents Are Saying</h2>
+          <div class="border"></div>
+        </div>
+        <div class="testimonials-content">
+          <div class="swiper testimonials-slider mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="./image/woman.jpg" alt="review 1" />
+                  <div class="name">Name Surname</div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse,
+                  officia praesentium excepturi ex a vitae quo alias explicabo velit
+                  modi molestiae dolorem optio cupiditate quasi voluptatibus vel.
+                  Accusantium, quas?
+                </p>
+                <div class="stars">
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="./image/woman.jpg" alt="review 2" />
+                  <div class="name">Name Surname</div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse,
+                  officia praesentium excepturi ex a vitae quo alias explicabo velit
+                  modi molestiae dolorem optio cupiditate quasi voluptatibus vel.
+                  Accusantium, quas?
+                </p>
+                <div class="stars">
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star-o"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="./image/woman.jpg" alt="review 3"/>
+                  <div class="name">Name Surname</div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse,
+                  officia praesentium excepturi ex a vitae quo alias explicabo velit
+                  modi molestiae dolorem optio cupiditate quasi voluptatibus vel.
+                  Accusantium, quas?
+                </p>
+                <div class="stars">
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star-o"></i>
+                  <i class="font-accent fa-star-o"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="./image/woman.jpg" alt="review 4" />
+                  <div class="name">Name Surname</div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse,
+                  officia praesentium excepturi ex a vitae quo alias explicabo velit
+                  modi molestiae dolorem optio cupiditate quasi voluptatibus vel.
+                  Accusantium, quas?
+                </p>
+                <div class="stars">
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star"></i>
+                  <i class="font-accent fa-star-o"></i>
+                  <i class="font-accent fa-star-o"></i>
+                  <i class="font-accent fa-star-o"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./image/logo.svg" alt="FunLearn logo" />
+        <div class="share">
+          <div class="share-button">
+            <a href="https://www.facebook.com" target="_blank">
+              <div class="icon"><i class="font-accent fa-facebook"></i></div>
+              <span>Facebook</span>
+            </a>
+          </div>
+
+          <div class="share-button">
+            <a href="https://x.com" target="_blank">
+              <div class="icon"><i class="font-accent fa-twitter"></i></div>
+              <span>Twitter</span>
+            </a>
+          </div>
+
+          <div class="share-button">
+            <a href="https://www.instagram.com" target="_blank">
+              <div class="icon"><i class="font-accent fa-instagram"></i></div>
+              <span>Instagram</span>
+            </a>
+          </div>
+
+          <div class="share-button">
+            <a href="https://www.youtube.com" target="_blank">
+              <div class="icon"><i class="font-accent fa-youtube"></i></div>
+              <span>YouTube</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav class="footer__navigation">
+        <h4>Useful Links</h4>
+        <ul>
+          <li>
+            <a href="./about.html" class="text">About us</a>
+          </li>
+          <li>
+            <a href="./classes.html" class="text">Classes</a>
+          </li>
+          <li>
+            <a href="./faq.html" class="text">FAQ</a>
+          </li>
+          <li>
+            <a href="./contacts.html" class="text">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="footer__address">
+        <p>Contact Info</p>
+        <ul>
+          <li>
+            <i class="font-accent fa-phone"></i>
+            <div class="text">
+              Phone<br />
+            <a href="tel:0802229522">080 222 95-22</a>
+            </div>
+          </li>
+          <li>
+            <i class="font-accent fa-email"></i>
+            <div class="text">
+              Email<br />
+              <a href="mailto:demo@example.com">demo@example.com</a>
+            </div>
+          </li>
+          <li>
+            <i class="font-accent fa-location"></i>
+            <div class="text">Address<br />Saint-Petersburg</div>
+          </li>
+        </ul>
+      </address>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/counter.js"></script>
+  </body>
+</html>

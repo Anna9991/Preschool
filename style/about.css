@@ -1,0 +1,45 @@
+.play {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  background-color: #f6f5ff;
+  color: #4b5f6d;
+  padding: 100px;
+  justify-items: center;
+}
+
+.play iframe {
+  border: none;
+}
+
+.play div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.play h2 {
+  font-size: 32px;
+  color: #95c535;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* CONTACT US */
+
+.contact-us {
+  background-color: #95c535;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-us h2 {
+  padding: 15px 0;
+}
+
+.contact-us__buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
