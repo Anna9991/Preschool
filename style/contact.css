@@ -1,47 +1,47 @@
 .contact__question {
   display: flex;
   flex-direction: column;
-  background-color: #f6f5ff;
   gap: 30px;
   padding: 50px 50px 0;
+  background-color: #f6f5ff;
 }
 
 .contact__question h2 {
   color: #95c535;
-  text-transform: capitalize;
-  text-align: center;
   font-size: 32px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .question-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   align-items: center;
+  gap: 15px;
 }
 
 .form-control {
   display: block;
-  max-width: 500px;
   width: 100%;
+  max-width: 500px;
   border-radius: 15px;
   border-left: #7b68ee solid 5px;
   padding: 10px;
 }
 
 .question-button {
-  max-width: 100px;
   align-self: center;
+  max-width: 100px;
 }
 
 .contact-address {
-  background-color: #f6f5ff;
-  color: #4b5f6d;
   display: flex;
   flex-direction: column;
-  padding: 50px;
   gap: 30px;
+  padding: 50px;
+  color: #4b5f6d;
   text-align: center;
+  background-color: #f6f5ff;
 }
 
 .contact-address h2 {
@@ -50,34 +50,40 @@
 }
 
 .address-cards ul {
-  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
   justify-items: center;
+  gap: 30px;
+  list-style: none;
 }
 
 .address-cards li {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 50px 0;
   width: 100%;
-  border-left: 10px solid #95c535;
-  border-bottom: none;
+  border-radius: 15px;
   border-top: none;
   border-right: none;
-  border-radius: 15px;
+  border-bottom: none;
+  border-left: 10px solid #95c535;
+  padding: 50px 0;
   box-shadow: rgba(0, 0, 0, .3) 3px 3px 8px;
 }
 
 .address-cards span {
-  font-size: 22px;
   padding-bottom: 10px;
+  font-size: 22px;
 }
 
 .address-cards a:hover {
   color: #7b68ee;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
 }
 
 @media all and (min-width: 481px) and (max-width: 899px){
@@ -86,15 +92,23 @@
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .form-control {
+    width: 350px;
+  }
+
   .contact__question {
-    padding: 50px 20px 0;
+    padding: 50px 10px 0;
   }
 }
 
 @media all and (max-width: 480px) {
   .address-cards ul {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+  }
+
+  .form-control {
+    width: 250px;
   }
 
   .contact__question {

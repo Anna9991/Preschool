@@ -16,7 +16,6 @@ $(window).scroll(function () {
                     duration: 3000,
                     easing: "swing",
                     step: function () {
-                        //$this.text(Math.ceil(this.countNum));
                         $this.text(
                             Math.ceil(this.countNum).toLocaleString("en")
                         );
@@ -25,7 +24,6 @@ $(window).scroll(function () {
                         $this.text(
                             Math.ceil(this.countNum).toLocaleString("en")
                         );
-                        //alert('finished');
                     }
                 }
             );

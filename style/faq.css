@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
   padding: 30px 150px 50px;
   font-weight: normal;
   font-size: 20px;
-  gap: 20px;
 }
 
 .questions div {
@@ -13,22 +13,22 @@
 }
 
 .accordion {
-  background-color: #f6f5ff;
-  color: #4b5f6d;
-  cursor: pointer;
-  padding: 20px;
   width: 100%;
   border: none;
-  text-align: left;
-  outline: none;
-  font-size: 20px;
-  transition: 0.4s;
+  border-top: none;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  border-left: 10px solid #95c535;
-  border-bottom: none;
-  border-top: none;
   border-right: none;
+  border-bottom: none;
+  border-left: 10px solid #95c535;
+  padding: 20px;
+  outline: none;
+  color: #4b5f6d;
+  font-size: 20px;
+  text-align: left;
+  background-color: #f6f5ff;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
 .active, .accordion:hover {
@@ -36,22 +36,22 @@
 }
 
 .panel {
-  padding: 0 20px;
   display: none;
-  background-color:#f6f5ff;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 0 20px;
+  box-shadow: rgba(0, 0, 0, .3) 3px 3px 8px;
   overflow: hidden;
   color: #4b5f6d;
-  width: 100%;
-  box-sizing: border-box;
-  box-shadow: rgba(0, 0, 0, .3) 3px 3px 8px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  background-color:#f6f5ff;
 }
 
 .panel p {
+  display: block;
   margin-top: 1em;
   margin-bottom: 1em;
-  display: block;
 }
 
 .active, .accordion:hover {
@@ -59,11 +59,11 @@
 }
 
 .accordion:after {
-  content: '\02795'; 
-  font-size: 20px;
-  color: #4b5f6d;
-  float: right;
+  content: '\02795';
   top: 50%;
+  float: right;
+  color: #4b5f6d; 
+  font-size: 20px;
 }
 
 .active:after {
