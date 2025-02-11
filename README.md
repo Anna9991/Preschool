@@ -1,3 +1,5 @@
-# School
+# Prechool
 
-Website for school: https://anna9991.github.io/School/
+Website for preschool: https://anna9991.github.io/School/
+
+Stack: HTML, CSS, JavaScript
