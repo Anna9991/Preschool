@@ -86,7 +86,7 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  border-radius: 15px;
+  border-radius: 30px;
   padding: 30px;
   background-color: #fff;
 }
@@ -99,7 +99,7 @@
 
 .card-image img {
   border: 5px solid #fff;
-  border-radius: 15px;
+  border-radius: 50%;
   border-bottom-color: #7b68ee;
   border-left-color: #7b68ee;
 }

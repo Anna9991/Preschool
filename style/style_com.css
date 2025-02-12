@@ -3,18 +3,22 @@
 .header {
   position: fixed;
   z-index: 10;
-  display: grid;
-  grid-template-columns: min-content min-content 1fr 200px;
-  justify-items: center;
-  align-items: end;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   padding: 25px 0;
   font-size: 20px;
 }
 
 .header__logo {
-  width: 180px;
+  width: 50px;
   height: 50px;
+}
+
+.header__logo img {
+  filter: invert(1) brightness(1000%);
+  transition: filter 0.3s ease;
 }
 
 .header input {
@@ -22,8 +26,7 @@
 }
 
 .header label {
-  visibility: hidden;
-  opacity: 0;
+  display: none;
   font-size: 20px;
   cursor: pointer;
 }
@@ -163,38 +166,30 @@
 .share {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .share-button {
-  display: inline-block;
-  float: left;
-  width: 60px;
-  height: 60px;
-  margin: 0 5px;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
-  overflow: hidden;
   background: #95c535;
-  transition: all 0.5s ease-out;
   cursor: pointer;
-}
-
-.share-button:hover {
-  width: 160px;
 }
 
 .icon {
   display: inline-block;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  line-height: 60px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
   text-align: center;
 }
 
 .icon i {
-  line-height: 60px;
+  line-height: 40px;
 }
 
 .fa-facebook:before {
@@ -260,8 +255,7 @@
   }
 
   .header label {
-    visibility: visible;
-    opacity: 1;
+    display: inline-block;
   }
 
   .header__menu {
@@ -270,9 +264,9 @@
     right: 0;
     box-sizing: border-box;
     width: 100%;
-    border: #4b5f6d solid 2px;
+    border: #c7e6a3 solid 2px;
     opacity: 0;
-    color: #4b5f6d;
+    color: #c7e6a3;
     background: #fff;
     transform: scale(0);
     transform-origin: top;
@@ -330,8 +324,7 @@
   }
 
   .header label {
-    visibility: visible;
-    opacity: 1;
+    display: inline-block;
   }
 
   .header__menu {
@@ -339,9 +332,9 @@
     top: 100%;
     right: 0;
     width: 100%;
-    border: #4b5f6d solid 2px;
+    border: #c7e6a3 solid 2px;
     opacity: 0;
-    color: #4b5f6d;
+    color: #c7e6a3;
     background: #fff;
     transform: scale(0);
     transform-origin: top;
@@ -380,26 +373,21 @@
   .footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content min-content;
-    justify-items: start;
+    justify-items: center;
     gap: 20px;
     padding: 5px;
-
   }
 
   .footer__navigation {
     width: 100%;
     border-top: #95c535 solid 5px;
+    padding-top: 10px;
   }
 
   .footer__address {
     width: 100%;
     border-top: #95c535 solid 5px;
-  }
-
-  .share {
-    display: grid;
-    grid-template-columns: 175px 175px;
-    grid-template-rows: 1fr 1fr;
+    padding-top: 10px;
   }
 
   .gotopbtn {
