@@ -1,5 +1,8 @@
-# Preschool
+# 🎨 Preschool Website 🌟
 
-Website for preschool: https://anna9991.github.io/School/
+### 📍 Live Demo: [Website for Preschool]([https://anna9991.github.io/School/](https://anna9991.github.io/Preschool/)
 
-Stack: HTML, CSS, JavaScript
+## 🛠 **Tech Stack**
+- **HTML**
+- **CSS**
+- **JavaScript**
